@@ -1,0 +1,58 @@
+{
+  "name": "tree-hollow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "^0.1.23",
+    "apollo-server": "^2.3.1",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "helmet": "^3.15.0",
+    "react": "^16.8.0-alpha.0",
+    "react-apollo": "^2.3.3",
+    "react-apollo-hooks": "^0.3.1",
+    "react-dom": "^16.8.0-alpha.0",
+    "styled-components": "^4.1.3",
+    "winston": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server:dev": "concurrently \"npm start\" \"nodemon\"",
+    "apollo:codegen": "apollo client:codegen --endpoint=http://localhost:3001/graphql --target typescript --outputFlat ./types/client/gql"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/graphql": "^14.0.4",
+    "@types/helmet": "0.0.42",
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/styled-components": "^4.1.4",
+    "apollo": "^2.3.0",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.9",
+    "normalize.css": "^8.0.1",
+    "prettier": "^1.15.3",
+    "react-scripts": "^2.1.3",
+    "sockjs-client": "^1.3.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.2"
+  }
+}
